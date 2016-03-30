@@ -1,0 +1,51 @@
+body {
+  font-family: 'Work Sans', sans-serif;
+  font-size:40px;
+}
+
+div {
+  margin-bottom: 15px;
+  font-family: 'Work Sans', sans-serif;
+  font-size:13px;
+}
+
+
+nav {
+  position:fixed;
+  top:0;
+  left:-5%;
+  width:110%;
+  padding-bottom:0.5cm;
+  padding-top:0.5cm;
+  padding-left:10%;
+  background-image: url('img/paisley.png');
+  background-repeat: repeat-x;
+}
+
+#container{width:100%;}
+
+table.center {
+  margin-left:auto;
+  margin-right:auto;
+}
+
+table {
+  width:90%;
+  border-top:1px solid #e5eff8;
+  border-right:1px solid #e5eff8;
+  margin:1em auto;
+  border-collapse:collapse;
+}
+
+th {
+ color:white;
+ background:grey;
+}
+
+td {
+  color:#678197;
+  border-bottom:1px solid #e5eff8;
+  border-left:1px solid #e5eff8;
+  padding:.3em 1em;
+  text-align:center;
+}
