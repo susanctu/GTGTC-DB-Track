@@ -21,7 +21,7 @@ def populate_sqlite_db(movieIDFile):
       for castmember in movie['cast']:
         personID = castmember.personID
         name = castmember.data['name']
-        c.execute('INSERT INTO actors VALUES (?, ?, ?)', (title, name, personID))
+        c.execute('INSERT INTO actors VALUES (?, ?, ?)', (name, title, personID))
   conn.commit()
   conn.close()
 
