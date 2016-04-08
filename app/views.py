@@ -6,7 +6,7 @@ from flask import render_template
 @app.route('/index')
 def index():
     cursor = get_db().cursor()
-    cursor.execute("[QUERY HERE]")
+    cursor.execute("[QUERY 1]")
     rows = cursor.fetchall()
     return render_template(
       'index.html', 
@@ -16,7 +16,7 @@ def index():
 @app.route('/join')
 def join():
     cursor = get_db().cursor()
-    cursor.execute("SELECT name,movies.title,rating FROM movies INNER JOIN actors ON movies.title=actors.title")
+    cursor.execute("[QUERY 3]")
     rows = cursor.fetchall()
     return render_template(
       'index.html', 

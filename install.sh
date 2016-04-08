@@ -7,4 +7,5 @@ fi
 
 apt-get update
 apt-get install python-pip
+apt-get install sqlite3 
 pip install flask
