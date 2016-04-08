@@ -2,9 +2,10 @@
 <html>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <head>
-    <title> trip photos </title>
+    <title> GTGTC Movie DB </title>
     <link href="../static/main.css" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Work+Sans:200,600&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Fugaz+One' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Signika' rel='stylesheet' type='text/css'>
 </head>
 <body>
 <nav>
@@ -13,19 +14,19 @@ GTGTC Movie Database
 
 <div id="container" style="margin-top:3cm">
 <table class="center">
-<tr>
-<th scope="col">Movie</th>
-<th scope="col">Director</th>
-<th scope="col">Year</th>
-<th scope="col">Score</th>
-</tr>
+  <tr>
+    <th scope="col">Movie</th>
+    <th scope="col">Director</th>
+    <th scope="col">Year</th>
+    <th scope="col">Score</th>
+  </tr>
 {% for row in rows %}
-<tr>
-<td>{{ row[0] }}</td>
-<td>{{ row[1] }}</td>
-<td>{{ row[2] }}</td>
-<td>{{ row[3] }}</td>
-</tr>
+  <tr>
+    <td>{{ row[0] }}</td>
+    <td>{{ row[1] }}</td>
+    <td>{{ row[2] }}</td>
+    <td>{{ row[3] }}</td>
+  </tr>
 {% endfor %}
 </table>
 
